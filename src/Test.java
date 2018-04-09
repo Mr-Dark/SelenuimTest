@@ -35,19 +35,10 @@ public class Test {
 	public void test() {
 		driver.get("https://www.facebook.com");
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath(".//*[@id='u_0_a']")).sendKeys("Jamal");
-		driver.findElement(By.xpath(".//*[@id='u_0_c']")).sendKeys("Alkelani");
-		driver.findElement(By.xpath(".//*[@id='u_0_f']")).sendKeys("gamalxx@gmail.com");
-		driver.findElement(By.xpath(".//*[@id='u_0_i']")).sendKeys("gamalxx@gmail.com");
-		driver.findElement(By.xpath(".//*[@id='u_0_m']")).sendKeys("TestWithSelenuim");
-		driver.findElement(By.xpath(".//*[@id='u_0_7']")).click();
-		Select sel=new Select(driver.findElement(By.xpath(".//*[@id='month']")));
-		sel.selectByIndex(3);
-		Select sel2=new Select(driver.findElement(By.xpath(".//*[@id='day']")));
-		sel.selectByIndex(3);
-		Select sel3=new Select(driver.findElement(By.xpath(".//*[@id='year']")));
-		sel.selectByIndex(3);
-		driver.findElement(By.xpath(".//*[@id='u_0_s']")).click();
+		driver.findElement(By.xpath(".//*[@id='email']")).sendKeys("gamalalkelani@gmail.com");
+		driver.findElement(By.xpath(".//*[@id='pass']")).sendKeys("gamal@@t20166");
+		driver.findElement(By.xpath(".//*[@id='u_0_2']")).click();
+
 	}
 
 }
